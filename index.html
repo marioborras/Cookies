@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cookies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="cookies.js"></script>
+    <script src="main.js"></script>
+    <!-- <script>
+        var visited = Cookies.get('visit');
+        if (visited) {
+            alert("already visited!");
+        } else {
+            alert('first time');
+            Cookies.set('visit', 1)
+        }      
+</script> -->
+      
+</head>
+<body onload="DisplayCookie()", "DisplayAll()">
+    <form name="sugarForm" action="">
+        Quantity <input type="text"  name="sugarCustomer"/> <input type="button" value="Add Item" onclick="OrderSugarCookie()"/>
+        <h1 id="cookiecount"></h1>
+    </form>
+    <form name="chocoForm" action="">
+            Quantity <input type="text"  name="chocoCustomer"/> <input type="button" value="Add Item" onclick="OrderChocolateCookie()"/>
+            <h1 id="chococookiecount"></h1>
+        </form>
+        <form name="lemonForm" action="">
+                Quantity <input type="text"  name="lemonCustomer"/> <input type="button" value="Add Item" onclick="OrderLemonCookie();"/>
+                <h1 id="lemoncookiecount"></h1>
+            </form>
+
+            <h1 id="cookietotal">total:test</h1>
+</body>
+</html>
