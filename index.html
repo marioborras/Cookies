@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="cache-control" content="no-cache" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Cookies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="cookies.js"></script>
-    <script src="main.js"></script>
-    <!-- <script>
-        var visited = Cookies.get('visit');
-        if (visited) {
-            alert("already visited!");
-        } else {
-            alert('first time');
-            Cookies.set('visit', 1)
-        }      
-</script> -->
-      
+    <script src="cookies.js"></script>    
 </head>
-<body onload="DisplayCookie()", "DisplayAll()">
-    <form name="sugarForm" action="">
-        Quantity <input type="text"  name="sugarCustomer"/> <input type="button" value="Add Item" onclick="OrderSugarCookie()"/>
-        <h1 id="cookiecount"></h1>
-    </form>
-    <form name="chocoForm" action="">
-            Quantity <input type="text"  name="chocoCustomer"/> <input type="button" value="Add Item" onclick="OrderChocolateCookie()"/>
-            <h1 id="chococookiecount"></h1>
-        </form>
-        <form name="lemonForm" action="">
-                Quantity <input type="text"  name="lemonCustomer"/> <input type="button" value="Add Item" onclick="OrderLemonCookie();"/>
-                <h1 id="lemoncookiecount"></h1>
-            </form>
-
-            <h1 id="cookietotal">total:test</h1>
+<body>
+    <div id="main">
+    <div id="container">
+        <div class="cookie">
+            <img src="images/sugar.png" alt="">
+                <form name="sugarForm" action="">Quantity <input type="text"  name="sugarCustomer"/> <input class="input_buttons"            type="button" value="Add Item" onclick="OrderSugarCookie()"/></form>
+                <p id="cookiecount"></p>
+             </div>
+             <div class="cookie">
+                <img src="images/Chocolate.png" alt="">
+                 <form name="chocoForm" action="">Quantity <input type="text"   name="chocoCustomer"/> <input class="input_buttons"  type="button" value="Add Item" onclick="OrderChocolateCookie()"/></form>
+             <p id="chococookiecount"></p>
+            </div>
+            <div class="cookie">
+                <img src="images/lemon.png" alt="">
+                <form name="lemonForm" action="">Quantity <input type="text"  name="lemonCustomer"/> <input class="input_buttons" type="button"         value="Add Item" onclick="OrderLemonCookie()"/> </form>
+                <p id="lemoncookiecount"></p>
+            </div>
+        </div>
+        <div id="cleardiv">
+            <button onclick="cancelOrder()">CANCEL ORDER</button>
+        </div>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>

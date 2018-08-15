@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/retro.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-size: 1.3em;
+    
+}
+#main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+img {
+    
+    width: 200px; 
+    height: 200px;
+}
+
+#container  {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    font-weight: 600;
+}
+
+input {
+    width: 50px;
+    font-size: 1.5em;
+}
+
+button, .input_buttons {
+    background-color: purple;
+    padding: 6px, 12px;
+    height: 45px;
+    width: 100px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "FuturaW01-Medium","Trebuchet MS",Arial,sans-serif;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+button {
+        position:relative;
+         top:50%; 
+         left:16%;
+         width: 200px;
+}
+    
+
+#cleardiv {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 699px ) {
+    button {
+        position:relative;
+         top:50%; 
+         left:35%;
+         width: 400px;
+}
+} 
